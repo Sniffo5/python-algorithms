@@ -1,6 +1,5 @@
 class Algorithms:
-    __reiterations = 100000
-    
+
     def bubble_sort(unsorted_data):
         sorted_data = unsorted_data
         
@@ -13,17 +12,14 @@ class Algorithms:
         return sorted_data
     def selection_sort(unsorted_data):
         sorted_data = unsorted_data
-        smallest_number_position = 0
         
         for i in range(len(sorted_data)-1):
-            for j in range(i, len(sorted_data)-1):
-                if(sorted_data[smallest_number_position] > sorted_data[j]):
-                    smallest_number_position = j
-            temp = sorted_data[i]
-            sorted_data[i] = sorted_data[smallest_number_position]
-            sorted_data[smallest_number_position] = temp 
-            
-        return sorted_data
+            for j in range(i, len(sorted_data)):
+                if(sorted_data[i]> sorted_data[j]):
+                    temp = sorted_data[i]
+                    sorted_data[i] = sorted_data[j]
+                    sorted_data[j] = temp
+        return sorted_data    
     def insertion_sort(unsorted_data):
         pass
 
