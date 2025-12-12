@@ -19,7 +19,7 @@ for i in range(len(generation_methods)):
             start_time = time()
             sorting_methods[j](unsorted_data[:])
             end_time = time()
-            sorting_times[j].append(end_time-start_time)
+            sorting_times[j].append((end_time-start_time)*1000)
         sorting_times[j] = sum(sorting_times[j])/len(sorting_times[j])
     sorting_overview.append(sorting_times)
     

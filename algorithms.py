@@ -14,11 +14,13 @@ class Algorithms:
         sorted_data = unsorted_data
         
         for i in range(len(sorted_data)-1):
+            min_index = i
             for j in range(i, len(sorted_data)):
                 if(sorted_data[i]> sorted_data[j]):
-                    temp = sorted_data[i]
-                    sorted_data[i] = sorted_data[j]
-                    sorted_data[j] = temp
+                    min_index = j
+            temp = sorted_data[i]
+            sorted_data[i] = sorted_data[j]
+            sorted_data[j] = temp
         return sorted_data    
     def insertion_sort(unsorted_data):
         sorted_data = unsorted_data
