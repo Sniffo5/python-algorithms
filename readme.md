@@ -106,6 +106,9 @@ Pythons inbyggda sorteringslgoritm är mycket snabbare. För mitt orginella test
 |**Merge Sort**|9.6 ms|9.45 ms|8.3 ms| 7.75 ms|
 |**Python Sort**| 0.68 ms| 0.54 ms|0.069 ms| 0.03 ms|
 
+***10000 tal, 100 unika tal, 100 slumpmässiga tal, tal mellan 1 och 20000000***\
+***CPU:** 9800x3d, **RAM:** 16 GB 6000 MHZ CL30 DDR5*
+
 Merge sort är snabbbare i alla fall, dock har jag i andra tester regelbundet fått att Insertion Sort är snabbare på semi sorted data, vilket hade förklarat varför python sort delvis anvdänder sig gav insertion sort. Dock är Pythons inbyggda fortfarande milsvis snabbare, det är då på grund av att den anpassar algoritm-användningen för datan och på så sätt lyckas sortera datan betydligt snabbare.
 
 
