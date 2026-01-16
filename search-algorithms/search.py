@@ -7,10 +7,11 @@ def binary_search(data,search):
     index = len(data)/2
     index_2 = len(data)
     while True:
-        
         if data[index] == search:
             return index
-        
         if(data[index] < search):
-            pass
+            index = (index_2-index)/2
+        if(data[index] > search):
+            index = index/2
+        
         
