@@ -27,7 +27,7 @@ Idag så fixade jag så att jag min "test" så att jag kör igenom alla sorterin
 
 ---
 ### DAG 4 | 11-01-2025
-Idag skrev jag klart min analys och gjorde min merge-sort. Merge-sort var riktigt klurigt. Jag hade många problem där med bland annat att repptera funktionerna tillräckligt många gåner samt att lägga till talen i slutet rätt efter jag har sorterat men ändå har tal kvar. jag körde även for loopar med if statser inuti men bytte ut det til while loppar för att förenkla koden men samt får den att fungera i alla situationer. Det var väldigt spänande att få ta sig ann en soppas svår alogirtm och det tog många timmar av att jklura för att få den att fungera.
+Idag skrev jag klart min analys och gjorde min merge-sort. Merge-sort var riktigt klurigt. Det var inte svårt att första hur det fungerade men det var svårt att implementera det. Jag hade många problem där med bland annat att repptera funktionerna tillräckligt många gåner samt att lägga till talen i slutet rätt efter jag har sorterat men ändå har tal kvar. jag körde även for loopar med if statser inuti men bytte ut det til while loppar för att förenkla koden men samt får den att fungera i alla situationer. Det var väldigt spänande att få ta sig ann en soppas svår alogirtm och det tog många timmar av att jklura för att få den att fungera.
 
 ---
 ---
