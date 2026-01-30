@@ -2,12 +2,13 @@ from algorithms import Algorithms
 from list_generation import Gen
 from time import time
 import math
+sorter = Algorithms()
 length = 10000
 unique_elements = 100
 random_elements = 100
 
 generation_methods = [Gen.random(length),Gen.random_narrow(length,unique_elements),Gen.random_semi(length, random_elements ),Gen.sorted_reverse(length)]
-sorting_methods = [Algorithms.bubble_sort,Algorithms.selection_sort,Algorithms.insertion_sort,Algorithms.merge_sort, sorted]
+sorting_methods = [sorter.bubble_sort,sorter.selection_sort,sorter.insertion_sort,sorter.merge_sort, sorted]
 
 sorting_overview = []
 

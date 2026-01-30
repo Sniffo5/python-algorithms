@@ -1,7 +1,7 @@
 class Algorithms:
 
-    def bubble_sort(unsorted_data):
-        sorted_data = unsorted_data
+    def bubble_sort(self, unsorted_data):
+        sorted_data = unsorted_data.copy()
         
         for i in range(len(sorted_data)-1):
             for j in range(len(sorted_data)-1-i):
@@ -10,20 +10,20 @@ class Algorithms:
                     sorted_data[j] = sorted_data[j+1]
                     sorted_data[j+1] = temp
         return sorted_data
-    def selection_sort(unsorted_data):
-        sorted_data = unsorted_data
+    def selection_sort(self, unsorted_data):
+        sorted_data = unsorted_data.copy()
         
         for i in range(len(sorted_data)-1):
             min_index = i
-            for j in range(i, len(sorted_data)):
-                if(sorted_data[i]> sorted_data[j]):
+            for j in range(i+1, len(sorted_data)):
+                if(sorted_data[j] < sorted_data[min_index]):
                     min_index = j
             temp = sorted_data[i]
-            sorted_data[i] = sorted_data[j]
-            sorted_data[j] = temp
+            sorted_data[i] = sorted_data[min_index]
+            sorted_data[min_index] = temp
         return sorted_data    
-    def insertion_sort(unsorted_data):
-        sorted_data = unsorted_data
+    def insertion_sort(self, unsorted_data):
+        sorted_data = unsorted_data.copy()
         
         for i in range(1, len(sorted_data)):
             element = sorted_data[i]
@@ -37,18 +37,18 @@ class Algorithms:
                     break
             sorted_data[key] = element
         return sorted_data
-    def merge_sort(unsorted_data):
+    def merge_sort(self, unsorted_data):
         if (len(unsorted_data) <= 1):
-            return unsorted_data
+            return unsorted_data.copy()
         
         left_data = unsorted_data[:(len(unsorted_data)//2)]
         right_data = unsorted_data[(len(unsorted_data)//2):]
 
-        left_sorted = Algorithms.merge_sort(left_data)
-        right_sorted = Algorithms.merge_sort(right_data)
+        left_sorted = self.merge_sort(left_data)
+        right_sorted = self.merge_sort(right_data)
     
-        return Algorithms.merge(left_sorted, right_sorted)
-    def merge(left_data, right_data):
+        return self.merge(left_sorted, right_sorted)
+    def merge(self, left_data, right_data):
         left_index = 0
         right_index = 0
         sorted_data = []

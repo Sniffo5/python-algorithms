@@ -23,7 +23,7 @@ Jag testade sedan alla 3 algorithmer på 100 tal och alla fungerade.
 
 ---
 ### DAG 3 | 08-12-2025
-Idag så fixade jag så att jag min "test" så att jag kör igenom alla sortering algoritmer 3 gånger per typ av genereringstyp och sedan tar medelvärdet och skriver ut allt snyggt i en tabell. Det tog så lång tid eftersom jag skulle fixa så det var enkelt att lägga till fler algoritmer och genertaionstyper. Jag gjorde så de flesta delarna av testen och utskriften var dynamiska. Jag fixade även min selection sort då jag märkte jag hade glömt -i i en av looparna. näst på tur blri att skriva analysen sedan göra merge sort efteråt ifall jag har mer tid.
+Idag så fixade jag så att jag min "test" så att jag kör igenom alla sortering algoritmer 3 gånger per typ av genereringstyp och sedan tar medelvärdet och skriver ut allt snyggt i en tabell. Det tog så lång tid eftersom jag skulle fixa så det var enkelt att lägga till fler algoritmer och genertaionstyper. Jag gjorde så de flesta delarna av testen och utskriften var dynamiska. Jag fixade även min selection sort då jag märkte jag hade glömt -i i en av looparna samt använda min_index i jämförelserna istället för j. näst på tur blir att skriva analysen sedan göra merge sort efteråt ifall jag har mer tid.
 
 ---
 ### DAG 4 | 11-01-2025
